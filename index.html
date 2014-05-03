@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pMail Deck</title>
+	<script src="js/vendor/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src='https://cdn.firebase.com/js/client/1.0.11/firebase.js'></script></script>
+	<!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/foundation.css">
+
+	<script src="js/getContext.js"></script>
+
+<!--
+	<script src="js/fakeData.json"></script>
+-->
+	<!-- If you are using the gem version, you need this only -->
+	<!--<link rel="stylesheet" href="css/app.css">-->
+
+	<script src="js/vendor/modernizr.js"></script>
+	<script src="js/getContext.js"></script>
+
+</head>
+<body>
+
+<div class="row">
+	<div class="large-7 large-centered">
+	<div class="panel">
+			<h1>pMail Deck</h1>
+
+			<h3>Email Sucks and we all know it!</h3>
+
+			<h3>Try a better way</h3>
+			<br>
+		</div>
+	</div>
+	<div class="small-3 columns">
+		<div class="panel">
+			<ul class="side-nav">
+				<li class="title">All Contacts</li>
+				<div class="row" id="contactList">
+
+
+
+				</div>
+			</ul>
+		</div>
+	</div>
+
+<div class="small-9 columns">
+
+	<div class="row">
+		<div class="large-4 columns">
+			<ul class="pricing-table">
+				<li class="title">Jack London</li>
+				<li class="price">Writer, Alaska Times</li>
+				<li class="description">Working with us on publishing Into the Wild</li>
+				<li class="bullet-item">4/26 - Phoned Jack to talk about Chapter 5</li>
+				<li class="bullet-item">4/08 - Phoned Jack to talk about Chapter 4</li>
+				<li class="bullet-item">3/11 - Met with Jack and Renee to talk about how we could help</li>
+				<li class="bullet-item">2/28 - Signed Jack as a client</li>
+<!--
+				<li class="bullet-item">2/14 - Met Jack for coffee to talk about his new book</li>
+-->
+				<li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+			</ul>
+		</div>
+		<div class="large-4 columns">
+			<ul class="pricing-table">
+				<li class="title">Steve Erwin</li>
+				<li class="price">Adventurer, Australia Television</li>
+				<li class="description">Working with us on producing When Animals Go Wild</li>
+				<li class="bullet-item">4/26 - Pitch approved! Working with Steve on hiring staff.</li>
+				<li class="bullet-item">4/08 - Worked with Steve on show pitch</li>
+				<li class="bullet-item">2/28 - Signed Steve as a client</li>
+				<li class="bullet-item">2/14 - Met Steve in LA to talk about new show</li>
+				<li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+			</ul>
+		</div>
+		<div class="large-4 columns">
+			<ul class="pricing-table">
+				<li class="title">Janey Hent</li>
+				<li class="price">Programmer, Canadian Webworks</li>
+				<li class="description">Working with us on developing RockMail</li>
+				<li class="bullet-item">4/26 - Held pitch practice with Janey</li>
+				<li class="bullet-item">4/08 - Met with Janey to talk about potential investors</li>
+				<li class="bullet-item">2/28 - Signed Janey as a client</li>
+				<li class="bullet-item">2/14 - Met Janey at conference, heard about RockMail</li>
+				<li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-4 columns">
+			<ul class="pricing-table">
+				<li class="title">Jack London</li>
+				<li class="price">Writer, Alaska Times</li>
+				<li class="description">Working with us on publishing Into the Wild</li>
+				<li class="bullet-item">4/26 - Phoned Jack to talk about Chapter 5</li>
+				<li class="bullet-item">4/08 - Phoned Jack to talk about Chapter 4</li>
+				<li class="bullet-item">3/11 - Met with Jack and Renee to talk about how we could help</li>
+				<li class="bullet-item">2/28 - Signed Jack as a client</li>
+				<!--<li class="bullet-item">2/14 - Met Jack for coffee to talk about his new book</li>-->
+				<li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+			</ul>
+		</div>
+		<div class="large-4 columns">
+			<ul class="pricing-table">
+				<li class="title">Steve Erwin</li>
+				<li class="price">Adventurer, Australia Television</li>
+				<li class="description">Working with us on producing When Animals Go Wild</li>
+				<li class="bullet-item">4/26 - Pitch approved! Working with Steve on hiring staff.</li>
+				<li class="bullet-item">4/08 - Worked with Steve on show pitch</li>
+				<li class="bullet-item">2/28 - Signed Steve as a client</li>
+				<li class="bullet-item">2/14 - Met Steve in LA to talk about new show</li>
+				<li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+			</ul>
+		</div>
+		<div class="large-4 columns">
+			<ul class="pricing-table">
+				<li class="title">Janey Hent</li>
+				<li class="price">Programmer, Canadian Webworks</li>
+				<li class="description">Working with us on developing RockMail</li>
+				<li class="bullet-item">4/26 - Held pitch practice with Janey</li>
+				<li class="bullet-item">4/08 - Met with Janey to talk about potential investors</li>
+				<li class="bullet-item">2/28 - Signed Janey as a client</li>
+				<li class="bullet-item">2/14 - Met Janey at conference, heard about RockMail</li>
+				<li class="cta-button">
+					<a class="button" href="#">Buy Now</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	</div>
+</div>
+
+
+</body>
+</html>
